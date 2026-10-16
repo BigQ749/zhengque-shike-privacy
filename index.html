@@ -25,7 +25,9 @@
     <main>
       <div class="kicker">ZHENG QUE SHI KE</div>
       <h1>正确时刻隐私政策</h1>
-      <p class="meta">更新日期：2026年10月13日。适用于正确时刻安卓版（包名 com.zhengque.shike）及鸿蒙版（包名 com.zhengque.shike.hmos）。开发者：齐赛军。</p>
+      <p class="meta">本页分别列出正确时刻鸿蒙版与 Android 版的隐私政策，请按你安装的版本阅读。</p>
+      <h2>鸿蒙版隐私政策</h2>
+      <p class="meta">更新日期：2026年10月13日。适用于正确时刻鸿蒙版（包名 com.zhengque.shike.hmos）。开发者：齐赛军。</p>
       <p>正确时刻是一款在你这台设备上运行的提醒工具。不设自己的注册登录，不把你的意向、打卡或设置送到开发者的服务器。</p>
 
       <h2>我们收集什么</h2>
@@ -52,6 +54,45 @@
 
       <h2>联系</h2>
       <p>开发者：齐赛军。联系邮箱：saijunqi@gmail.com。电话：17354417249。我们不会、也无法远程查看你的本机数据。</p>
+
+      <hr />
+      <h2>Android 版隐私政策</h2>
+      <p class="meta">适用于正确时刻 Android 版（包名 com.zhengque.shike，版本 1.0.12）。更新日期：2026年10月16日。</p>
+      <p>正确时刻是一款本机香钟提醒应用。核心功能不依赖网络；你写下的内容只保存在当前设备，不会上传或与他人共享。</p>
+
+      <h2>处理的信息及存储位置</h2>
+      <ul>
+        <li>你主动填写的意向、补充说明、自定义提醒句、节奏和静默时段设置、声音与振动选择、提醒开关、香灰数量及 awake / drifted / snooze 打卡记录：保存在 Android WebView 的本机网页存储中。</li>
+        <li>是否同意本政策、通知权限是否曾被拒绝：保存在 Android SharedPreferences 中。</li>
+        <li>你开启系统提醒后，提醒时间、文案和声音选项会交给本机 Android AlarmManager；系统通知发出后由 Android 通知服务处理。上述内容不发送到服务器。</li>
+        <li>你主动选择文件时，系统文件选择器只把所选文件交给网页；正确时刻不会扫描设备存储或相册。当前核心功能不需要选择文件。</li>
+      </ul>
+
+      <h2>权限和传感器</h2>
+      <ul>
+        <li><strong>android.permission.INTERNET：</strong>WebView 使用 HTTPS 形式的本机资源地址加载 APK 内置页面。核心功能不依赖联网，不向服务器上传意向、打卡、设备标识或使用日志。打开在线政策页面时需要联网。</li>
+        <li><strong>android.permission.POST_NOTIFICATIONS：</strong>仅在你进入「节奏 → 更多 → 允许系统通知」，阅读用途说明并点「继续」后，才会请求 Android 13 及以上系统通知权限。拒绝后香钟仍可使用；再次开启需由你主动进入系统设置。</li>
+        <li><strong>android.permission.VIBRATE：</strong>点香、弹灰和呼吸交互可能触发短振动；香燃完提醒的振动由「节奏 → 更多 → 振动」开关控制。</li>
+        <li><strong>陀螺仪和加速度传感器：</strong>在你同意本政策并触碰香后，网页读取设备方向事件中的角度，用于让 3D 烟雾随手机倾斜。数据仅在当前页面内存中短暂使用，不记录、不上传。应用不读取步数或活动历史。</li>
+        <li>版本 1.0.12 的 APK 权限清单仅声明 INTERNET、POST_NOTIFICATIONS 和 VIBRATE；不声明 USE_EXACT_ALARM 或 SCHEDULE_EXACT_ALARM。应用通过 Android AlarmManager 设置本机提醒；系统可能延后提醒触发时间。</li>
+        <li>应用不使用 DeviceMotion、相机、麦克风、定位、通讯录、相册扫描或广告标识。</li>
+      </ul>
+
+      <h2>第三方服务</h2>
+      <p>第三方 SDK：无。应用没有账号、广告、分析、云同步、日历或 AI 服务。3D 页面使用随 APK 一起打包的 Three.js 渲染库，不向其发送数据。</p>
+
+      <h2>同意和撤回</h2>
+      <p>首次启动时，业务页面和传感器不会在你同意前加载或启用。你可在「节奏 → 更多 → 隐私与协议」查看政策，或点「撤回同意」。撤回会清除同意标记、取消本机待发提醒并退出应用；已有本机记录不会自动删除。卸载应用或清除应用数据可删除本机记录。</p>
+
+      <h2 id="rights">你的权利</h2>
+      <ul>
+        <li>查阅和修改：你可在应用内查看、更新意向、提醒设置和打卡记录。</li>
+        <li>删除：清除应用数据或卸载应用，可删除保存在本机的数据。</li>
+        <li>撤回同意：在「节奏 → 更多 → 隐私与协议」中撤回；撤回会取消待发提醒，但不会自动删除已有本机记录。</li>
+      </ul>
+
+      <h2>联系我们</h2>
+      <p>隐私问题请联系：<a href="mailto:saijunqi@gmail.com">saijunqi@gmail.com</a>。</p>
     </main>
   </body>
 </html>
